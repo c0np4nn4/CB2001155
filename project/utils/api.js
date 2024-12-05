@@ -1,6 +1,5 @@
+// NOTE: you need `shared secret key` from me haha :)
 const ENCRYPTED_KEY = "U2FsdGVkX19QlQ6B8ajuJjy4wsxB1rcj1hg0yQoikjfyi2Sj4KM3vtoHgmqtt2Yu4xqYCs3S5fC9ZI3HOj5Dsg=="
-
-// localStorage.clear();
 
 // Decrypt the API key using AES
 function decryptApiKey(secret_key) {

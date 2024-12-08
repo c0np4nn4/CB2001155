@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Function to fetch air quality and weather data by city
 
   //
-  let citi_names = [];
+  let citi_names = ['bangkok'];
 
   //
   let citi_status = [];
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
         citi_status.push({ city_name, airQualityGrade })
 
-        if (airQualityGrade == 'good 😊' || airQualityGrade == 'moderate 😐') {
+        if (airQualityGrade == 'good 😊') {
           citi_status_good.push({ city_name, airQualityGrade })
         }
 

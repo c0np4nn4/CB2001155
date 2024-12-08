@@ -2,6 +2,11 @@
 
 > 201824590 조승현
 
+## TODO
+- [ ] ranking dashboard UI
+- [ ] (maybe) integreate with Web3 (token minting based on weather or air pollution data)
+- [ ] (maybe) integreate additional API such as `three.js` or other weather-related APIs
+
 ## Demo
 https://github.com/user-attachments/assets/ea64c0c5-a7a3-4070-b86c-2bbc427eb21e
 

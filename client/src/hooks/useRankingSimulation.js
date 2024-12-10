@@ -11,7 +11,7 @@ function useRankingSimulation() {
     try {
       // Get latitude and longitude for the capital city
       const geocodeResponse = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${capital}&limit=1&appid=${API_KEY}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${capital}&limit=1&appid=${API_KEY}`
       );
       const { lat, lon } = geocodeResponse.data[0];
 

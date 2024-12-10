@@ -2,11 +2,13 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://c0np4nn4.github.io/CB2001155/",
   "dependencies": {
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.7",
     "cra-template": "1.2.0",
+    "gh-pages": "^6.2.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.6",
     "react-dom": "^19.0.0",
@@ -16,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

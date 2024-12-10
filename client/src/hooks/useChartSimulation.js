@@ -29,7 +29,7 @@ function useChartSimulation() {
 
   // Function to fetch pollutant data (e.g., PM2.5, PM10, NOx)
   const fetchAirPollutantData = async (city, API_KEY) => {
-    const geocodeUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+    const geocodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
     try {
       // Get coordinates for the city
       const geocodeResponse = await axios.get(geocodeUrl);
@@ -37,7 +37,7 @@ function useChartSimulation() {
 
       const currentTime = Math.floor(Date.now() / 1000);
       const startTime = currentTime - 5 * 24 * 60 * 60; // Last 5 days
-      const pollutantUrl = `http://api.openweathermap.org/data/2.5/air_pollution/history?lat=${lat}&lon=${lon}&start=${startTime}&end=${currentTime}&appid=${API_KEY}`;
+      const pollutantUrl = `https://api.openweathermap.org/data/2.5/air_pollution/history?lat=${lat}&lon=${lon}&start=${startTime}&end=${currentTime}&appid=${API_KEY}`;
 
       const pollutantResponse = await axios.get(pollutantUrl);
       const pollutantList = pollutantResponse.data.list;

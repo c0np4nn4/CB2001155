@@ -1,0 +1,33 @@
+/* Header 기본 설정 */
+.animated-header {
+  position: relative;
+  height: 20vh;
+  min-height: 200px;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  /* 하늘 색상 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 텍스트 영역 */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* 헤더 텍스트 스타일 */
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+p {
+  color: #f8f8f8;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}

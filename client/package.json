@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://c0np4nn4.github.io/CB2001155/",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.7",

@@ -12,7 +12,6 @@ function Navigation({ setActiveTab }) {
         boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)", // 그림자 추가로 입체감
       }}
     >
-
       <div className="container">
         {/* Logo */}
         <a
@@ -24,8 +23,14 @@ function Navigation({ setActiveTab }) {
             color: "white",
             transition: "transform 0.3s ease",
           }}
-          onMouseEnter={(e) => { e.target.style.transform = "scale(1.1)"; e.target.style.color = "lime" }}
-          onMouseLeave={(e) => { e.target.style.transform = "scale(1)"; e.target.style.color = "white" }}
+          onMouseEnter={(e) => {
+            e.target.style.transform = "scale(1.1)";
+            e.target.style.color = "lime";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.transform = "scale(1)";
+            e.target.style.color = "white";
+          }}
         >
           AQMonitor
         </a>
@@ -39,8 +44,17 @@ function Navigation({ setActiveTab }) {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{
+            border: "none",
+          }}
         >
-          <span className="navbar-toggler-icon" style={{ color: "white" }}></span>
+          <span
+            className="navbar-toggler-icon"
+            style={{
+              backgroundImage:
+                "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 30%22%3E%3Cpath stroke=%22white%22 stroke-width=%222%22 d=%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E')",
+            }}
+          ></span>
         </button>
 
         {/* Menu Items */}
@@ -76,7 +90,7 @@ function Navigation({ setActiveTab }) {
           </ul>
         </div>
       </div>
-    </nav >
+    </nav>
   );
 }
 
